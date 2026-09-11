@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP Check - Privacy Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="quiz">
+    <section id="start-screen" class="screen">
+      <h1>Australian Privacy Principles (APP) Check</h1>
+      <p>Test your knowledge of the Australian Privacy Principles.</p>
+      <p class="small">There are 10 questions - Choose the best answer.</p>
+      <p class="small">Recommended to study the APP before taking the test.</p>
+      <p><a href="https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference">Australian Privacy Principles Summary</a></p>
+      <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <section id="quiz-screen" class="screen hidden">
+      <div class="top">
+        <span id="progress"></span>
+        <span id="score">Score: 0</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+
+      <h2 id="question"></h2>
+      <div id="options"></div>
+
+      <div id="feedback" class="feedback hidden"></div>
+
+      <button id="next-btn" class="next hidden">Next Question</button>
+    </section>
+
+    <section id="result-screen" class="screen hidden">
+      <h1>Quiz Complete</h1>
+      <p id="result-score" class="result-score"></p>
+      <p id="result-message"></p>
+
+      <div id="review"></div>
+
+      <button id="restart-btn">Try Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
